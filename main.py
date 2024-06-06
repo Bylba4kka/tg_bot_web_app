@@ -16,7 +16,7 @@ dp = Dispatcher()
 @dp.message(CommandStart())
 async def start(message: types.Message):
     markup = types.ReplyKeyboardMarkup(keyboard=[
-        [types.KeyboardButton(text='Открыть Веб страницу', web_app=WebAppInfo(url='https://github.com/Bylba4kka/tg_bot_web_app'))]
+        [types.KeyboardButton(text='Открыть Веб страницу', web_app=WebAppInfo(url='https://bylba4kka.github.io/tg_bot_web_app'))]
     ])
     await message.answer("Привет!", reply_markup=markup)
 
